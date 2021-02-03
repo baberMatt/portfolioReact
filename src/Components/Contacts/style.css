@@ -1,0 +1,55 @@
+.contactMe {
+    position: absolute;
+    z-index: 1;
+    transition-duration: .25s;
+    
+    }
+
+.contactMe.hidden {
+    left: 19%;
+}
+.contactMe.showing {
+    left: 7%
+}
+
+
+#navStyleLeft {
+    height: 100vh;
+    background-color: #061326;
+    position: relative;
+    z-index: 1;
+    border-top-left-radius: 99%;
+    border-bottom-left-radius: 99%;
+    box-shadow: 0 0 10px black;
+    color: white;
+    display: flex;
+}
+
+#navStyleRight {
+    height: 100vh;
+    background-color: #061326;
+    position: relative;
+    z-index: 1;
+    width: 20vw;
+}
+
+.contactDiv {
+    font-family: 'Syne', sans-serif;
+    width: 90%;
+    color: white;
+}
+
+#email {
+    color: black;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+}
+
+#copied {
+    width: 80%;
+    color: black;
+    font-size: 14px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+}

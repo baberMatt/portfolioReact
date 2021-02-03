@@ -1,0 +1,42 @@
+#hr {
+    border-color: white;
+    height: 1px;
+    width: 100%
+}
+
+.aboutMe {
+  height: 100%;
+  width: 100%;
+}
+
+.rowCustom{
+  height: 100%;
+  width: 100%;
+}
+
+.rowCustom{
+  height: 100%;
+  width: 100%;
+}
+
+#parent {
+    
+  
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    
+    margin: auto;
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+  }
+  
+
+  
+  #mask {
+    height: 100%;
+    width: 100%;
+  }
+
+  

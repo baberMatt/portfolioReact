@@ -1,0 +1,41 @@
+#projects {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+}
+
+.rowCustom {
+    padding: 3%;
+}
+
+.projDescription {
+    width: 30%;
+}
+
+.colCustom {
+    margin-top: 1%;
+    padding-right: 10%;
+
+}
+
+
+.colCustom1 {
+    margin-top: 18%;
+    padding-right: 10%;
+
+}
+
+.colCustom2 {
+    margin-top: 16%;
+    padding-left: 10%;
+}
+
+.github {
+    transform: rotate(270deg);
+}
+
+.projShadow {
+    -webkit-filter: drop-shadow(4px 0px 20px black);
+    -moz-filter: drop-shadow(4px 0px 20px black);
+    filter: drop-shadow(4px 0px 20px black);
+}

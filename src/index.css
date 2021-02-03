@@ -11,3 +11,140 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: 0;
+}
+
+#header {
+  position: absolute;
+  /* top: 2%;
+  left: 2%; */
+  z-index: 1;
+  font-family: 'Syne', sans-serif;
+  color: rgb(202, 202, 202);
+  
+}
+
+#headerText {
+  font-weight: 600;
+}
+
+#mainContent {
+  background-color:  #061326;
+  background: radial-gradient( rgba(0, 0, 0, 0.2),  #061326,  #061326, #061326);
+  z-index: 2;
+  position: absolute;
+  margin-left: 25%;
+  height: 100vh;
+  width: 73vw;
+  font-family: 'Syne', sans-serif;
+  
+  color: rgb(202, 202, 202);
+}
+
+#mainCenterBG {
+  background-color: rgba(6, 19, 38, .7);
+  height: 100vh;
+}
+
+.middleRow {
+  width: 75%;
+}
+
+.navCol {
+  position: relative; 
+}
+
+.projectsShowing {
+ animation: projectsShowing 1s ease-in forwards;
+}
+
+@keyframes projectsShowing {
+  0%{
+    transform: translateY(0%);
+  }
+
+  100%{
+    transform: translateY(-45vh);
+  }
+
+ 
+}
+
+.hShowing {
+  display: inline-block;
+  animation: hShowing 1s ease-in forwards;
+ }
+ 
+ @keyframes hShowing {
+   0%{
+     transform: translateY(0%);
+   }
+ 
+   100%{
+     transform: translateY(35vh);
+     /* transform: translateX(3vw); */
+   }
+ }
+
+ .oShowing {
+  display:inline-block;
+  animation: oShowing 1.5s ease-in-out forwards;
+  
+ }
+ 
+ @keyframes oShowing {
+   0%{
+     transform: translate(0%);
+   }
+
+   14% {
+     transform: translate(-6vw, 12vh);
+    }
+   60%{
+    transform: translate(-6vw, 28vh);
+   }
+   99%{
+    transform: translate(1.3vw, 51.2vh);
+   }
+   100%{
+    display: hidden;
+    
+   }
+ }
+
+.projectsClosing {
+  animation: projectsClosing 1s ease-in forwards;
+ }
+ 
+ @keyframes projectsClosing {
+   0%{
+     transform: translateY(-45vh);
+   }
+ 
+   100%{
+     transform: translateY(0%);
+   }
+ }
+
+ .rowCustom {
+  position: relative;
+ 
+}
+
+#canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 7;
+}
+
+
+
+
