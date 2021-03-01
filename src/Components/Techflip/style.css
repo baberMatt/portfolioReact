@@ -75,4 +75,5 @@ transform: rotateY(180deg);
 .fliptext p {
     font-weight: 600;
     font-size: 10px;
+    margin-bottom: 0 !important;
 }

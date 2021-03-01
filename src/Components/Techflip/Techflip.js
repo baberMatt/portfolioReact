@@ -13,7 +13,7 @@ function Techflip(props) {
 
     console.log(props.thisTech)
     return (
-        <div className="flip-card techShadow">
+        <div className={"flip-card techShadow " + (props.windowSize<1199 ? "mx-5" : "") }>
             <div className="flip-card-inner">
                 <div className="flip-card-front">
                     <img className="img-fluid my-2 mx-1 " src={props.thisTech.link} />

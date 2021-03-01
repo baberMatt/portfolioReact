@@ -4,6 +4,21 @@
     top: 10%;
 }
 
+#projectsMobile {
+    width: 100%;
+    position: relative;
+    margin-top: 10%;
+    padding: 10%;
+}
+
+#projectsMobile p {
+    font-size: 2rem;
+}
+
+.projImg {
+    object-fit: contain;
+    border-radius: 5%;
+}
 .rowCustom {
     padding: 3%;
 }

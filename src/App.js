@@ -25,13 +25,16 @@ function App() {
             <source src={Video} type="video/mp4" />
           </video>
         <div id="header">
-            <h1 class="headerh1 text-center mt-5 ml-1 display-3 ">Welcome</h1>
+            
+            <h1 class="headerh1  mt-5 ml-1">Welcome</h1>
             <div class="break "></div>
-            <p id="headerText"class="ml-2"> Read about me, check out some of <br/>my projects,
-                and feel free to contact me.</p>
+            <h4 id="headerText"class="ml-2"> Read about me, check out some of <br/>my projects,
+                and feel free to contact me.</h4>
         </div> 
           {windowSize>1199 ? <Contacts /> : <Contactsmobile />}
-          <Portfolio />
+          <Portfolio 
+          windowSize={windowSize}
+          />
         </div>
    
   );

@@ -3,14 +3,13 @@
     z-index: 1;
     transition-duration: .25s;
     width: 100%;
-    
     }
 
 .contactMeMobile.hidden {
-    top: 12%
+    top: 19%
 }
 .contactMeMobile.showing {
-    top: 5%;
+    top: 11%;
 }
 
 
@@ -32,6 +31,7 @@
     position: relative;
     z-index: 1;
     width: 100vw;
+    left: -2%;
 }
 
 .contactDivMobile {
@@ -42,7 +42,7 @@
 
 #emailMobile {
     color: black;
-    font-size: .7rem;
+    font-size: 9px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
 }
@@ -57,5 +57,5 @@
 
 .resume {
     font-size: 9px;
-    margin-top: -16px !important;
+    margin-top: -1.8rem !important;
 }

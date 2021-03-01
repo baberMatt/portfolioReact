@@ -56,21 +56,23 @@ function Contactsmobile() {
 
 
           <div className="nav text-center">
-              <a href="https://www.instagram.com/psst.itsacoup/"><img alt="instagram icon" src="https://img.icons8.com/fluent/48/000000/instagram-new.png" /></a>
-              <a href="https://www.linkedin.com/in/matt-baber-68b9711b3/"><img alt="linkedin icon" src="https://img.icons8.com/fluent/48/000000/linkedin.png" /></a>
-              <a href="https://github.com/baberMatt"><img alt="github icon" src="https://img.icons8.com/fluent/48/000000/github.png" /></a>
+            <a href="https://www.instagram.com/psst.itsacoup/"><img alt="instagram icon" src="https://img.icons8.com/fluent/48/000000/instagram-new.png" /></a>
+            <a href="https://www.linkedin.com/in/matt-baber-68b9711b3/"><img alt="linkedin icon" src="https://img.icons8.com/fluent/48/000000/linkedin.png" /></a>
+            <a href="https://github.com/baberMatt"><img alt="github icon" src="https://img.icons8.com/fluent/48/000000/github.png" /></a>
           </div>
 
           <div className="text-center d-flex contactDivMobile">
-            <div className="d-flex flex-column">
-              <p className="p-0" style={{fontSize: "9px"}} >R</p>
-              <p className="p-0 resume" >e</p>
-              <p className="p-0 resume" >s</p>
-              <p className="p-0 resume" >u</p>
-              <p className="p-0 resume" >m</p>
-              <p className="p-0 resume" >e</p>
+            <div className="d-flex">
+              <div className="d-flex flex-column">
+                <p className="p-0" style={{ fontSize: "9px" }} >R</p>
+                <p className="p-0 resume" >e</p>
+                <p className="p-0 resume" >s</p>
+                <p className="p-0 resume" >u</p>
+                <p className="p-0 resume" >m</p>
+                <p className="p-0 resume" >e</p>
+              </div>
+              <a href={resume} type="application/pdf" target="_blank"><img alt="pdf icon" src="https://img.icons8.com/officel/48/000000/pdf.png" /></a>
             </div>
-            <a href={resume} type="application/pdf" target="_blank"><img alt="pdf icon" src="https://img.icons8.com/officel/48/000000/pdf.png" /></a>
           </div>
 
         </div>

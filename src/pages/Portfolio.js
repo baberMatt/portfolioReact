@@ -4,13 +4,14 @@ import AboutMe from "../Components/AboutMe/AboutMe.js";
 import Tech from "../Components/Tech/Tech.js";
 import Projects from "../Components/Projects/Projects.js";
 import { textObject } from "../utils/textObject.js"
+import { propTypes } from "react-bootstrap/esm/Image";
 
 
 // import UserContext from "../utils/userContext";
 // import Row from "../components/Row";
 
 
-function Portfolio() {
+function Portfolio(props) {
     const [aboutMeShowing, setAboutMeShowing] = useState("init");
     const [aboutMeBtn, setAboutMeBtn] = useState("");
     
@@ -124,6 +125,16 @@ function Portfolio() {
         }
     }
 
+   
+    useEffect(() => {
+        if (props.windowSize < 1199) {
+            setAboutMeShowing("showing");
+            setTechShowing(true)
+            setTechBody('show')
+            setProjectsShowing('projectsShowing');
+        }
+    }, [props.windowSize]);
+
     useEffect(() => {
         setHeight(widthAndHeight.current.offsetHeight);
         setWidth(widthAndHeight.current.offsetWidth);
@@ -133,29 +144,32 @@ function Portfolio() {
         <div ref={widthAndHeight} className="row" id="mainContent">
             <Container fluid className="p-0">
                 <Row className="d-flex m-0 justify-content-around w-100 h-100">
-                    <Col xs={12} xl={4} className="d-flex align-items-center">
+                    <Col xs={12} xl={4} className="d-flex  align-items-center">
                                 <AboutMe
                                     showing={aboutMeShowing}
+                                    windowSize={props.windowSize}
                                 />
                     </Col>
-                    <Col xs={12} xl={3} >
+                    {props.windowSize>1199 ? <Col xs={12} xl={3} >
                         <div className={"h-100 text-center d-flex flex-column justify-content-center navCol"}>
-                            <h3 id="aboutMeBtn" onClick={handleAboutMeClick}  className={"mb-5 " + aboutMeBtn}>about me</h3>
-                            <h3 onClick={handleProjectsClick} style={{ pointerEvents: disabled }} className={projectsShowing}>projects</h3>
-                            <h3 id="techBtn" onClick={handleTechClick} style={{ pointerEvents: disabled }} className={"mt-5 " + techBtn}>technologies</h3>
+                            <h1 id="aboutMeBtn" onClick={handleAboutMeClick}  className={"mb-5 " + aboutMeBtn}>about me</h1>
+                            <h1 onClick={handleProjectsClick} style={{ pointerEvents: disabled }} className={projectsShowing}>projects</h1>
+                            <h1 id="techBtn" onClick={handleTechClick} style={{ pointerEvents: disabled }} className={"mt-5 " + techBtn}>technologies</h1>
                         </div>
-                    </Col>
-                    <Col xs={12} xl={4} className="d-flex align-items-center">
+                    </Col> : "" }
+                    <Col xs={12} xl={4} className="d-flex justify-content-center align-items-center">
                         <Tech
                             techIntro={techIntro}
                             techBody={techBody}
                             showing={techShowing}
+                            windowSize={props.windowSize}
                         />
                     </Col>
                     <Projects
                         showing={projectsShowing}
                         height={height}
                         width={width}
+                        windowSize={props.windowSize}
                     />
                 </Row>
             </Container>

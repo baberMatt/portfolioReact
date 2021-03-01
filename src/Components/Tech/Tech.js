@@ -14,7 +14,7 @@ function Tech(props) {
             <Row>
                 <Col md={12}>
                     <div id="techDisplay" className="border d-flex flex-column">
-                        <div id="techIntro" className={props.techIntro + ' ml-2 w-75'} >
+                        <div id="techIntro" className={props.techIntro + ' ml-2'} >
                             <div id="techDiv1" className="mt-3">
                                 <p id="tech1" className="d-inline"></p>
                             </div>
@@ -33,6 +33,7 @@ function Tech(props) {
                                     {languageArray.map(item => (
                                         <Techflip
                                         thisTech={item}
+                                        windowSize={props.windowSize}
                                         /> 
                                     ))}    
                             </Row>
@@ -41,6 +42,7 @@ function Tech(props) {
                                 {appsArray.map(item => (
                                         <Techflip
                                         thisTech={item}
+                                        windowSize={props.windowSize}
                                         />
                                     ))}
                                 </Row>

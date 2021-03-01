@@ -49,12 +49,12 @@ function useFadeIn(fire) {
 function AboutMe(props) {
 
   const [opacity, filterVal] = useFadeIn(props.showing)
-
+  console.log(props.windowSize)
 
   return (
     <div className={"aboutMe " + (!props.showing ? "" : "")}>
       <Row className="rowCustom">
-        <Col md={12} >
+        {props.windowSize > 1199 ? <Col md={12} >
           <div id="parent" >
             <div id="mask" className="d-flex align-items-center" style={{ opacity: opacity, filter: filterVal }}>
               <div id="aboutMeContent" className="pl-4 mt-3 border-left d-flex flex-column justify-content-center">
@@ -70,7 +70,29 @@ function AboutMe(props) {
               </div>
             </div>
           </div>
-        </Col>
+        </Col> :
+          <div id="parentMobile" >
+            <h1 className="text-center border-bottom mb-5 pb-3">about me</h1>
+            <div id="mask" className="" style={{ opacity: opacity, filter: filterVal }}>
+              <div id="aboutMeContent" className="pl-4 mt-3">
+                <Row className="d-flex h-auto justify-content-around">
+                  <Col xs={12} sm={5} className="p-5">
+                    <h2 className="">Hello, I'm Matt Baber</h2>
+                    <h2>I am a Full Stack Web Developer</h2>
+                    <hr id="hr" />
+                    <h4>A little bit about me...</h4>
+                    <p>I am 33 years old. I live in Euclid, Ohio with
+                    my wife Emily, and our daughter Dottie and our dog and cat, Rudy and Snacky. My whole adult life I
+                    have worked as a Chef, and have made the decision to leave that career path and learn how to
+                    program.</p>
+                  </Col>
+                  <Col xs={12} sm={5} className="d-flex justify-content-center">
+                    <img className="img-fluid h-75" src={Portrait} alt="my portrait"></img>
+                  </Col>
+                </Row>
+              </div>
+            </div>
+          </div>}
       </Row>
     </div>
   );

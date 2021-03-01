@@ -1,13 +1,20 @@
-#techDisplay {
-    background-color: #1e1e1e;
-    height: 70vh;
-    width: 20vw;
-}
 
-#techIntro p {
-    margin: 0 !important;
-    font-size: 12px;
-}
+@media screen and (min-width:1200px) {
+    #techDisplay {
+        background-color: #1e1e1e;
+        height: 70vh;
+        width: 20vw;
+    }
+  }
+  @media screen and (max-width:1199px) {
+    #techDisplay {
+        background-color: #1e1e1e;
+        height: auto;
+        width: 80vw;
+    }
+  }
+
+
 
 .techShadow {
     -webkit-filter: drop-shadow(4px 0px 20px black);
