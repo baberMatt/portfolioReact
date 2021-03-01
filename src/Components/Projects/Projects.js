@@ -1,11 +1,10 @@
 import React, { useState, useEffect, useRef, } from "react";
-import { Row, Col, } from "../Grid";
+import { Container, Row, Col } from "react-bootstrap";
 import Canvas from "../Canvas"
 import Streamline from "../../Assets/streamLine.png"
 import Botw from "../../Assets/baberOfTheWoods.png"
 import Loaded from "../../Assets/loaded.png"
 import Soon from "../../Assets/coomingSoon.png"
-import { Link } from "react-router-dom";
 import "./style.css";
 
 function Projects(props) {
@@ -45,10 +44,10 @@ function Projects(props) {
             height={props.height}
             width={props.width}
             /> */}
-            <Row custom>
-                <Col size="md-6">
+            <Row className="">
+                <Col md={6}>
                     <Row>
-                        <Col size="md-12" flex custom>
+                        <Col md={12} className="d-flex colCustom">
                             <img className="img-fluid projShadow" src={Soon} />
                             <div className="projDescription projShadow text-right">
                                 <h3>Turnup</h3>
@@ -56,7 +55,7 @@ function Projects(props) {
                                 <a href=""><button className="btn btn-light px-2 py-0 mx-2"> {webIcon} </button></a> <a href={turnupRepo}><button className="btn btn-light p-2 mx-1">git {repoIcon}</button></a>
                             </div>
                         </Col>
-                        <Col size="md-12" flex custom1>
+                        <Col md={12} className="d-flex colCustom1">
                             <img className="img-fluid projShadow" src={Loaded} />
                             <div className="projDescription projShadow text-right">
                                 <h3 >Loaded</h3>
@@ -67,9 +66,9 @@ function Projects(props) {
                         </Col>
                     </Row>
                 </Col>
-                <Col size="md-6">
+                <Col md="6">
                     <Row>
-                        <Col size="md-12" flex custom2>
+                        <Col md={12} className="d-flex colCustom2">
                             <div className="projDescription projShadow ml-2 text-left">
                                 <h3>streamLine</h3>
                                 <p className="mb-2">A search app for the top games being streamed on you tube. Search for a specific streamer, or browse top games and watch live.</p>
@@ -77,7 +76,7 @@ function Projects(props) {
                             </div>
                             <img className="img-fluid projShadow" src={Streamline} />
                         </Col>
-                        <Col size="md-12" flex custom2>
+                        <Col md={12} className="d-flex colCustom2">
                             <div className="projDescription projShadow text-left">
                                 <h3>Baber of the Woods</h3>
                                 <p>An early project of mine, simple grid layout photo album with photos from my favorite hobby, hunting wild mushrooms.</p>

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import Select from "react-select";
 import resume from "../../Assets/mattBaberResume.pdf";
 
 import "./style.css";

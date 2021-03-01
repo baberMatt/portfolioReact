@@ -1,56 +1,61 @@
-.contactMe {
+.contactMeMobile {
     position: absolute;
     z-index: 1;
     transition-duration: .25s;
-    height: 100%;
+    width: 100%;
     
     }
 
-.contactMe.hidden {
-    left: 19%
+.contactMeMobile.hidden {
+    top: 12%
 }
-.contactMe.showing {
-    left: 7%;
+.contactMeMobile.showing {
+    top: 5%;
 }
 
 
-#navStyleLeft {
-    height: 100%;
+#navStyleTop {
+    height: 5vh;
     background-color: #061326;
     position: relative;
     z-index: 1;
     border-top-left-radius: 99%;
-    border-bottom-left-radius: 99%;
+    border-top-right-radius: 99%;
     box-shadow: 0 0 10px black;
     color: white;
     display: flex;
 }
 
-#navStyleRight {
-    height: 100%;
+#navStyleBottom {
+    height: 12vh;
     background-color: #061326;
     position: relative;
     z-index: 1;
-    width: 20vw;
+    width: 100vw;
 }
 
-.contactDiv {
+.contactDivMobile {
     font-family: 'Syne', sans-serif;
-    width: 90%;
+   
     color: white;
 }
 
-#email {
+#emailMobile {
     color: black;
     font-size: .7rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
 }
 
-#copied {
-    width: 80%;
+#copiedMobile {
+    
     color: black;
     font-size: 14px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
+}
+
+.resume {
+    font-size: 9px;
+    margin-top: -16px !important;
 }

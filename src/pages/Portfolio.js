@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Container, Row, Col } from "../Components/Grid";
-import AboutMe from "../Components/AboutMe";
-import Tech from "../Components/Tech";
-import Projects from "../Components/Projects"
-import { text } from "../utils/text.js"
+import { Container, Row, Col } from "react-bootstrap";
+import AboutMe from "../Components/AboutMe/AboutMe.js";
+import Tech from "../Components/Tech/Tech.js";
+import Projects from "../Components/Projects/Projects.js";
+import { textObject } from "../utils/textObject.js"
 
 
 // import UserContext from "../utils/userContext";
@@ -26,26 +26,39 @@ function Portfolio() {
     const [height, setHeight] = useState(0);
     const [width, setWidth] = useState(0);
 
-    var textSplit = text.map(item => (
-        item.split('')
+    var arrayOfObject = Object.values(textObject)
+    var objectTexts = []
+    var objectClasses = []
+    var string = "string";
 
-    ));
-
+    objectClasses = arrayOfObject.map(item => {
+        objectTexts.push(item[0].split(''))
+        return item
+    });
+    
     var delay = 5;
     var count = 1;
+    var divCount = 1;
+
+
 
     function addOneChar(i, j) {
-        document.getElementById(`tech${count}`).append(textSplit[i][j]);
-        if (j + 1 < textSplit[i].length) {  // next character in the current string
+        
+        let currentP = document.getElementById(`tech${count}`)
+        currentP.classList.add(objectClasses[i][1])
+        currentP.classList.add(objectClasses[i][2])
+        currentP.classList.add(objectClasses[i][3])
+        objectTexts[i][j] !== "1" ? currentP.append(objectTexts[i][j]) : divCount ++;
+        if (j + 1 < objectTexts[i].length) {  // next character in the current string
             setTimeout(function () { addOneChar(i, j + 1); }, delay);
-        } else if (i + 1 < textSplit.length) {   // start the next string in the text[] array
+        } else if (i + 1 < objectTexts.length) {   // start the next string in the text[] array
             count++;
-            let tech = document.getElementById("techIntro")
+            let tech = document.getElementById(`techDiv${divCount}`)
             let nextTech = document.createElement("p")
             nextTech.setAttribute("id", `tech${count}`)
             tech.appendChild(nextTech)
             setTimeout(function () { addOneChar(i + 1, 0); }, delay);
-        }
+        } 
         else {
             fadeTech();
         }
@@ -57,7 +70,15 @@ function Portfolio() {
     }
 
     function clearTech() {
-        document.getElementById("techIntro").innerHTML = "<p id='tech1'></p>";
+        document.getElementById("techDiv1").innerHTML = '<p id="tech1" className="d-inline"></p>';
+        document.getElementById("techDiv2").innerHTML = '';
+        document.getElementById("techDiv3").innerHTML = '';
+        document.getElementById("techDiv4").innerHTML = '';
+        document.getElementById("techDiv5").innerHTML = '';
+        document.getElementById("techDiv6").innerHTML = '';
+        document.getElementById("techDiv7").innerHTML = '';
+        document.getElementById("techDiv8").innerHTML = '';
+        document.getElementById("techDiv9").innerHTML = '';
     }
 
     const handleTechClick = function () {
@@ -74,8 +95,6 @@ function Portfolio() {
             setTechBody('hide');
         }
     }
-
-    
 
     const handleProjectsClick = function () {
         if (projectsShowing == '') {
@@ -97,11 +116,9 @@ function Portfolio() {
     }
 
     const handleAboutMeClick = function () {
-        
         if (aboutMeShowing === "hidden" || "init") {
             setAboutMeShowing("showing");
         }
-        
         if (aboutMeShowing === "showing") {
             setAboutMeShowing("hidden");
         }
@@ -112,31 +129,23 @@ function Portfolio() {
         setWidth(widthAndHeight.current.offsetWidth);
     }, [widthAndHeight.current]);
 
-    
-    
-
-
-
-
-
-
     return (
         <div ref={widthAndHeight} className="row" id="mainContent">
-            <Container fluid>
-                <Row flex jca h100>
-                    <Col size="md-4" flex aic>
+            <Container fluid className="p-0">
+                <Row className="d-flex m-0 justify-content-around w-100 h-100">
+                    <Col xs={12} xl={4} className="d-flex align-items-center">
                                 <AboutMe
                                     showing={aboutMeShowing}
                                 />
                     </Col>
-                    <Col size="md-3">
+                    <Col xs={12} xl={3} >
                         <div className={"h-100 text-center d-flex flex-column justify-content-center navCol"}>
                             <h3 id="aboutMeBtn" onClick={handleAboutMeClick}  className={"mb-5 " + aboutMeBtn}>about me</h3>
                             <h3 onClick={handleProjectsClick} style={{ pointerEvents: disabled }} className={projectsShowing}>projects</h3>
                             <h3 id="techBtn" onClick={handleTechClick} style={{ pointerEvents: disabled }} className={"mt-5 " + techBtn}>technologies</h3>
                         </div>
                     </Col>
-                    <Col size="md-4" flex aic>
+                    <Col xs={12} xl={4} className="d-flex align-items-center">
                         <Tech
                             techIntro={techIntro}
                             techBody={techBody}
@@ -148,7 +157,6 @@ function Portfolio() {
                         height={height}
                         width={width}
                     />
-
                 </Row>
             </Container>
         </div>

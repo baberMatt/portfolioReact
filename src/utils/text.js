@@ -16,6 +16,7 @@ export var text = [
     "'Postman',",
     "'MySQL Workbench',",
     "'MongoDBCompass']",
+    "<br></br>",
     "function loadLanguagesAndApps() {",
     "   for (i=0; i < Languages.length; i++){",
     "       let icon = document.createElement('img')",
