@@ -5,13 +5,15 @@ import Streamline from "../../Assets/streamLine.png"
 import Botw from "../../Assets/baberOfTheWoods.png"
 import Loaded from "../../Assets/loaded.png"
 import Turnup from "../../Assets/turnup.png"
+import Twochefs from "../../Assets/2chefs.png"
 import "./style.css";
 
 function Projects(props) {
     const [collapsed, setCollapsed] = useState(" collapse")
     const repoIcon = <img className="github img-fluid" src="https://img.icons8.com/ios-glyphs/18/000000/merge-git.png"/>;
     const webIcon = <img src="https://img.icons8.com/carbon-copy/40/000000/domain.png"/>;
-   
+    const [showCanvas, setShowCanvas] = useState(false)
+
     const loadedLink = "https://loadedtruckingapp.herokuapp.com/";
     const loadedRepo = "https://github.com/baberMatt/loaded";
     const streamLineLink = "https://babermatt.github.io/StreamerSearch/";
@@ -20,30 +22,38 @@ function Projects(props) {
     const turnupRepo = "https://github.com/baberMatt/Turnup";
     const botwLink = "https://babermatt.github.io/BaberOfTheWoods/";
     const botwRepo = "https://github.com/baberMatt/BaberOfTheWoods";
+    const twoChefsLink = "https://2chefsandabeat.com"
     
     
     function checkShowing() {
         if (props.showing == "projectsShowing") {
             setTimeout(function () { setCollapsed(""); }, 1025);
+            setTimeout(() => {
+                setShowCanvas(false)
+            }, 1900);
+            
         }
         else {
            setCollapsed(" collapse");
+           setShowCanvas(false)
         } 
     }
+
+    
      
 
     useEffect(() => {
         checkShowing(); 
       }, [props.showing]);
 
-    console.log(props.height, props.width)
+    
       
     return (
         <div className={"set" + collapsed} id={props.windowSize<1199 ? "projectsMobile" :"projects"}>
-            {/* <Canvas 
+            {showCanvas ? <Canvas 
             height={props.height}
             width={props.width}
-            /> */}
+            /> : "" }
             <Row className="">
                 <Col xs={12} lg={6}>
                     <Row>
@@ -70,11 +80,11 @@ function Projects(props) {
                     <Row>
                         <Col md={12} className={"d-flex colCustom2 "  + (props.windowSize<1199 ? "justify-content-center" : "")}>
                             <div className="projDescription projShadow ml-2 text-left">
-                                <h3>streamLine</h3>
-                                <p className="mb-2">A search app for the top games being streamed on you tube. Search for a specific streamer, or browse top games and watch live.</p>
-                                <a href={streamLineLink}><button className="btn btn-light px-2 py-0 mx-2"> {webIcon} </button></a> <a href={streamLineRepo}><button className="btn btn-light p-2 mx-1">git {repoIcon}</button></a>
+                                <h3>2 Chefs & a Beat</h3>
+                                <p className="mb-2">A brand page for a local food and music pop up. Built in squarespace.</p>
+                                <a href={twoChefsLink}><button className="btn btn-light px-2 py-0 mx-2"> {webIcon} </button></a> 
                             </div>
-                            <img className="img-fluid projImg projShadow" src={Streamline} />
+                            <img className="img-fluid projImg projShadow" src={Twochefs} />
                         </Col>
                         <Col md={12} className={"d-flex colCustom2 "  + (props.windowSize<1199 ? "justify-content-center mb-5" : "")}>
                             <div className="projDescription projShadow text-left">

@@ -49,9 +49,8 @@ function Contacts() {
               <div className="col-lg-6 d-flex py-5 flex-column justify-content-between align-items-center" id="navStyleRight">
 
                   <div className="text-center contactDiv d-flex flex-column align-items-center">
-                      <h6>Email Me</h6>
-                      <p id="email" onClick={copyEmail} className="p-1 border border-dark rounded">mbaber114@gmail.com</p>
-                      <p id="copied"  className={"border border-dark rounded " + copiedView}>copied to clipboard!</p>
+                      <img id="email" onClick={copyEmail}  src="https://img.icons8.com/color/48/000000/gmail--v1.png"/>
+                      <p id="copied"  className={"border border-dark rounded " + copiedView}>address copied to clipboard!</p>
                   </div>
 
         

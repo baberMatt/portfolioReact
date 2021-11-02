@@ -191,7 +191,13 @@ const Canvas = props => {
                 render(ratio + 0.01 );
                 });
             }
+
+            
+            drawLine(context, branchLine)
+           
+           
         }
+        
         render()
 
         // return () => {

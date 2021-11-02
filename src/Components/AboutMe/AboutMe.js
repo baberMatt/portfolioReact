@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Portrait from "../../Assets/portrait.png"
 import "./style.css";
@@ -8,6 +8,8 @@ function useFadeIn(fire) {
   let duration = 1500;
   const [opacity, setOpacity] = useState(0);
   const [filter, setFilter] = useState(0);
+
+
 
 
   useEffect(() => {
@@ -47,12 +49,20 @@ function useFadeIn(fire) {
 }
 
 function AboutMe(props) {
+  const aboutMeRef = useRef();
+
+  useEffect(() => {
+    if (props.getRect) {
+      props.setAboutMeRect(props.getRect(aboutMeRef));
+
+    }
+  }, [])
+
 
   const [opacity, filterVal] = useFadeIn(props.showing)
-  console.log(props.windowSize)
 
   return (
-    <div className={"aboutMe " + (!props.showing ? "" : "")}>
+    <div ref={aboutMeRef} className={"aboutMe " + (!props.showing ? "" : "")}>
       <Row className="rowCustom">
         {props.windowSize > 1199 ? <Col md={12} >
           <div id="parent" >
@@ -63,9 +73,9 @@ function AboutMe(props) {
                 <hr id="hr" />
                 <h6>A little bit about me...</h6>
                 <p>I am 33 years old. I live in Euclid, Ohio with
-                my wife Emily, and our daughter Dottie and our dog and cat, Rudy and Snacky. My whole adult life I
-                have worked as a Chef, and have made the decision to leave that career path and learn how to
-                          program.</p>
+                  my wife Emily, and our daughter Dottie and our dog and cat, Rudy and Snacky. My whole adult life I
+                  have worked as a Chef, and have made the decision to leave that career path and learn how to
+                  program.</p>
                 <img className="img-fluid mt-3" src={Portrait} alt="my portrait"></img>
               </div>
             </div>
@@ -82,9 +92,9 @@ function AboutMe(props) {
                     <hr id="hr" />
                     <h4>A little bit about me...</h4>
                     <p>I am 33 years old. I live in Euclid, Ohio with
-                    my wife Emily, and our daughter Dottie and our dog and cat, Rudy and Snacky. My whole adult life I
-                    have worked as a Chef, and have made the decision to leave that career path and learn how to
-                    program.</p>
+                      my wife Emily, and our daughter Dottie and our dog and cat, Rudy and Snacky. My whole adult life I
+                      have worked as a Chef, and have made the decision to leave that career path and learn how to
+                      program.</p>
                   </Col>
                   <Col xs={12} sm={5} className="d-flex justify-content-center">
                     <img className="img-fluid h-75" src={Portrait} alt="my portrait"></img>

@@ -1,84 +1,151 @@
+:root {
+  /* aboutMe Coords */
+  --aboutAX: ----;
+  --aboutAY: ----;
+  --aboutBX: ----;
+  --aboutBY: ----;
+  --aboutOX: ----;
+  --aboutOY: ----;
+  --aboutUX: ----;
+  --aboutUY: ----;
+  --aboutTX: ----;
+  --aboutTY: ----;
+  --aboutSPX: ----;
+  --aboutSPY: ----;
+  --aboutMX: ----;
+  --aboutMY: ----;
+  --aboutEX: ----;
+  --aboutEY: ----;
+
+  /* tech Coords */
+  --techTX: ----;
+  --techTY: ----;
+  --techE1X: ----;
+  --techE1Y: ----;
+  --techCX: ----;
+  --techCY: ----;
+  --techHX: ----;
+  --techHY: ----;
+  --techNX: ----;
+  --techNY: ----;
+  --techO1X: ----;
+  --techO1Y: ----;
+  --techLX: ----;
+  --techLY: ----;
+  --techO2X: ----;
+  --techO2Y: ----;
+  --techGX: ----;
+  --techGY: ----;
+  --techIX: ----;
+  --techIY: ----;
+  --techE2X: ----;
+  --techE2Y: ----;
+  --techSX: ----;
+  --techSY: ----;
+}
+
 
 @media screen and (min-width:1921px) and (max-width:2560px) {
-  html {font-size: 22.4px;}
+  html {
+    font-size: 22.4px;
+  }
 }
 
 @media screen and (min-width:1681px) and (max-width:1920px) {
-  html {font-size: 18px;}
+  html {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width:1537px) and (max-width:1680px) {
-  html {font-size: 16px;}
+  html {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width:1441px) and (max-width:1536px) {
-  html {font-size: 14.8px;}
+  html {
+    font-size: 14.8px;
+  }
 }
 
 @media screen and (min-width:1367px) and (max-width:1440px) {
-  html {font-size: 14px;}
+  html {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width:1281px) and (max-width:1366px) {
-  html {font-size: 13.2px;}
+  html {
+    font-size: 13.2px;
+  }
 }
 
 @media screen and (min-width:1025px) and (max-width:1280px) {
-  html {font-size: 11.5px;}
+  html {
+    font-size: 11.5px;
+  }
 }
 
 @media screen and (min-width:801px) and (max-width:1024px) {
-  html {font-size: 9.1px;}
+  html {
+    font-size: 9.1px;
+  }
 }
 
 @media screen and (min-width:601px) and (max-width:800px) {
-  html {font-size: 6.9px;}
+  html {
+    font-size: 6.9px;
+  }
 }
 
 @media screen and (min-width:415px) and (max-width:600px) {
-  html {font-size: 5px;}
+  html {
+    font-size: 5px;
+  }
 }
 
 @media screen and (min-width:350px) and (max-width:414px) {
-  html {font-size: 3.8px;}
+  html {
+    font-size: 3.8px;
+  }
 }
-
 
 h1 {
   font-size: 32px !important;
 }
+
 h2 {
   font-size: 24px !important;
 }
+
 h3 {
   font-size: 20.8px !important;
 }
+
 h4 {
   font-size: 16px !important;
 }
+
 h5 {
   font-size: 12.8px !important;
 }
+
 h6 {
   font-size: 11.2px !important;
 }
 
-
 body {
   margin: 0;
   font-size: 16px !important;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 #myVideo {
@@ -97,7 +164,6 @@ code {
   z-index: 1;
   font-family: 'Syne', sans-serif;
   color: rgb(202, 202, 202);
-  
 }
 
 .headerh1 {
@@ -106,11 +172,12 @@ code {
 
 #headerText {
   font-weight: 600;
+  
 }
 
 #mainContent {
-  background-color:  #061326;
-  background: radial-gradient( rgba(0, 0, 0, 0.2),  #061326,  #061326, #061326);
+  background-color: #061326;
+  background: radial-gradient( rgba(0, 0, 0, 0.2), #061326, #061326, #061326);
   z-index: 2;
   position: absolute;
   font-family: 'Syne', sans-serif;
@@ -124,9 +191,9 @@ code {
     width: 74%;
   }
 }
+
 @media screen and (max-width:1199px) {
   #mainContent {
-    
     top: 24%;
     height: auto;
     width: 100%;
@@ -143,84 +210,586 @@ code {
 }
 
 .navCol {
-  position: relative; 
+  position: relative;
 }
 
-.projectsShowing {
- animation: projectsShowing 1s ease-in forwards;
+
+
+.project1 {
+  animation: projectsShowing 1s ease-in forwards;
+  transform: translateY(-45vh);
+}
+
+.project2 {
+  animation: projectsShowing .5s ease-out forwards;
+}
+
+.project3 {
+  animation: projectsShowing .75s ease-in forwards;
+}
+
+.project4 {
+  animation: projectsShowing .5s ease-out forwards;
 }
 
 @keyframes projectsShowing {
-  0%{
+  0% {
     transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-45vh);
+  }
+}
+
+.aboutA {
+  animation: aboutA .5s ease-in forwards;
+}
+.aboutB {
+  animation: aboutB .5s ease-in forwards;
+}
+.aboutO {
+  animation: aboutO .5s ease-in forwards;
+}
+.aboutU {
+  animation: aboutU .5s ease-in forwards;
+}
+.aboutT {
+  animation: aboutT .5s ease-in forwards;
+}
+.aboutSp {
+  animation: aboutSp .5s ease-in forwards;
+}
+.aboutM {
+  animation: aboutM .5s ease-in forwards;
+}
+.aboutE {
+  animation: aboutE .5s ease-in forwards;
+}
+
+@keyframes aboutA {
+  0%{
+    transform: translate(0%, 0%);
   }
 
   100%{
-    transform: translateY(-45vh);
+    transform: translate(var(--aboutAX), var(--aboutAY));
+    
+  }
+}
+@keyframes aboutB {
+  0%{
+    transform: translate(0%, 0%);
   }
 
- 
+  100%{
+    transform: translate(var(--aboutBX), var(--aboutBY));
+    
+  }
 }
+@keyframes aboutO {
+  0%{
+    transform: translate(0%, 0%);
+  }
+
+  100%{
+    transform: translate(var(--aboutOX), var(--aboutOY));
+    
+  }
+}
+@keyframes aboutU {
+  0%{
+    transform: translate(0%, 0%);
+  }
+
+  100%{
+    transform: translate(var(--aboutUX), var(--aboutUY));
+    
+  }
+}
+@keyframes aboutT {
+  0%{
+    transform: translate(0%, 0%);
+  }
+
+  100%{
+    transform: translate(var(--aboutTX), var(--aboutTY));
+    
+  }
+}
+@keyframes aboutSp {
+  0%{
+    transform: translate(0%, 0%);
+  }
+
+  100%{
+    transform: translate(var(--aboutSPX), var(--aboutSPY));
+    
+  }
+}
+@keyframes aboutM {
+  0%{
+    transform: translate(0%, 0%);
+  }
+
+  100%{
+    transform: translate(var(--aboutMX), var(--aboutMY));
+    
+  }
+}
+@keyframes aboutE {
+  0%{
+    transform: translate(0%, 0%);
+  }
+
+  100%{
+    transform: translate(var(--aboutEX), var(--aboutEY));
+    
+  }
+}
+
+.hideAboutA {
+  animation: hideAboutA .5s ease-in forwards;
+}
+.hideAboutB {
+  animation: hideAboutB .5s ease-in forwards;
+}
+.hideAboutO {
+  animation: hideAboutO .5s ease-in forwards;
+}
+.hideAboutU {
+  animation: hideAboutU .5s ease-in forwards;
+}
+.hideAboutT {
+  animation: hideAboutT .5s ease-in forwards;
+}
+.hideAboutSp {
+  animation: hideAboutSp .5s ease-in forwards;
+}
+.hideAboutM {
+  animation: hideAboutM .5s ease-in forwards;
+}
+.hideAboutE {
+  animation: hideAboutE .5s ease-in forwards;
+}
+
+@keyframes hideAboutA {
+  0%{
+    transform: translate(var(--aboutAX), var(--aboutAY));
+  }
+  100%{
+    transform: translate(0%, 0%); 
+  }
+}
+@keyframes hideAboutB {
+  0%{
+    transform: translate(var(--aboutBX), var(--aboutBY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideAboutO {
+  0%{
+    transform: translate(var(--aboutOX), var(--aboutOY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideAboutU {
+  0%{
+    transform: translate(var(--aboutUX), var(--aboutUY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideAboutT {
+  0%{
+    transform: translate(var(--aboutTX), var(--aboutTY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideAboutSp {
+  0%{
+    transform: translate(var(--aboutSPX), var(--aboutSPY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideAboutM {
+  0%{
+    transform: translate(var(--aboutMX), var(--aboutMY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideAboutE {
+  0%{
+    transform: translate(var(--aboutEX), var(--aboutEY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+
+.techT {
+  animation: techT .5s ease-in forwards;
+}
+.techE1 {
+  animation: techE1 .5s ease-in forwards;
+}
+.techC {
+  animation: techC .5s ease-in forwards;
+}
+.techH {
+  animation: techH .5s ease-in forwards;
+}
+.techN {
+  animation: techN .5s ease-in forwards;
+}
+.techO1 {
+  animation: techO1 .5s ease-in forwards;
+}
+.techL {
+  animation: techL .5s ease-in forwards;
+}
+.techO2 {
+  animation: techO2 .5s ease-in forwards;
+}
+.techG {
+  animation: techG .5s ease-in forwards;
+}
+.techI {
+  animation: techI .5s ease-in forwards;
+}
+.techE2 {
+  animation: techE2 .5s ease-in forwards;
+}
+.techS {
+  animation: techS .5s ease-in forwards;
+}
+
+@keyframes techT {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techTX), var(--techTY));
+    
+  }
+}
+@keyframes techE1 {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techE1X), var(--techE1Y));
+    
+  }
+}
+@keyframes techC {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techCX), var(--techCY));
+    
+  }
+}
+@keyframes techH {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techHX), var(--techHY));
+    
+  }
+}
+@keyframes techN {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techNX), var(--techNY));
+    
+  }
+}
+@keyframes techO1 {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techO1X), var(--techO1Y));
+    
+  }
+}
+@keyframes techL {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techLX), var(--techLY));
+    
+  }
+}
+@keyframes techO2 {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techO2X), var(--techO2Y));
+    
+  }
+}
+@keyframes techG {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techGX), var(--techGY));
+    
+  }
+}
+@keyframes techI {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techIX), var(--techIY));
+    
+  }
+}
+@keyframes techE2 {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techE2X), var(--techE2Y));
+    
+  }
+}
+@keyframes techS {
+  0%{
+    transform: translate(0%, 0%);
+  }
+  100%{
+    transform: translate(var(--techSX), var(--techSY));
+    
+  }
+}
+
+.hideTechT {
+  animation: hideTechT .5s ease-in forwards;
+}
+.hideTechE1 {
+  animation: hideTechE1 .5s ease-in forwards;
+}
+.hideTechC {
+  animation: hideTechC .5s ease-in forwards;
+}
+.hideTechH {
+  animation: hideTechH .5s ease-in forwards;
+}
+.hideTechN {
+  animation: hideTechN .5s ease-in forwards;
+}
+.hideTechO1 {
+  animation: hideTechO1 .5s ease-in forwards;
+}
+.hideTechL {
+  animation: hideTechL .5s ease-in forwards;
+}
+.hideTechO2 {
+  animation: hideTechO2 .5s ease-in forwards;
+}
+.hideTechG {
+  animation: hideTechG .5s ease-in forwards;
+}
+.hideTechI {
+  animation: hideTechI .5s ease-in forwards;
+}
+.hideTechE2 {
+  animation: hideTechE2 .5s ease-in forwards;
+}
+.hideTechS {
+  animation: hideTechS .5s ease-in forwards;
+}
+
+@keyframes hideTechT {
+  0%{
+    transform: translate(var(--techTX), var(--techTY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechE1 {
+  0%{
+    transform: translate(var(--techE1X), var(--techE1Y));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechC {
+  0%{
+    transform: translate(var(--techCX), var(--techCY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechH {
+  0%{
+    transform: translate(var(--techHX), var(--techHY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechN {
+  0%{
+    transform: translate(var(--techNX), var(--techNY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechO1 {
+  0%{
+    transform: translate(var(--techO1X), var(--techO1Y));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechL {
+  0%{
+    transform: translate(var(--techLX), var(--techLY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechO2 {
+  0%{
+    transform: translate(var(--techO2X), var(--techO2Y));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechG {
+  0%{
+    transform: translate(var(--techGX), var(--techGY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechI {
+  0%{
+    transform: translate(var(--techIX), var(--techIY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechE2 {
+  0%{
+    transform: translate(var(--techE2X), var(--techE2Y));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+@keyframes hideTechS {
+  0%{
+    transform: translate(var(--techSX), var(--techSY));
+  }
+  100%{
+    transform: translate(0%, 0%);
+    
+  }
+}
+
 
 .hShowing {
   display: inline-block;
   animation: hShowing 1s ease-in forwards;
- }
- 
- @keyframes hShowing {
-   0%{
-     transform: translateY(0%);
-   }
- 
-   100%{
-     transform: translateY(35vh);
-     /* transform: translateX(3vw); */
-   }
- }
+}
 
- .oShowing {
-  display:inline-block;
+@keyframes hShowing {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(35vh);
+    /* transform: translateX(3vw); */
+  }
+}
+
+.oShowing {
+  display: inline-block;
   animation: oShowing 1.5s ease-in-out forwards;
-  
- }
- 
- @keyframes oShowing {
-   0%{
-     transform: translate(0%);
-   }
+}
 
-   14% {
-     transform: translate(-6vw, 12vh);
-    }
-   60%{
+@keyframes oShowing {
+  0% {
+    transform: translate(0%);
+  }
+  14% {
+    transform: translate(-6vw, 12vh);
+  }
+  60% {
     transform: translate(-6vw, 28vh);
-   }
-   99%{
+  }
+  99% {
     transform: translate(1.3vw, 51.2vh);
-   }
-   100%{
+  }
+  100% {
     display: hidden;
-    
-   }
- }
+  }
+}
 
 .projectsClosing {
   animation: projectsClosing 1s ease-in forwards;
- }
- 
- @keyframes projectsClosing {
-   0%{
-     transform: translateY(-45vh);
-   }
- 
-   100%{
-     transform: translateY(0%);
-   }
- }
+}
 
- .rowCustom {
+@keyframes projectsClosing {
+  0% {
+    transform: translateY(-45vh);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.rowCustom {
   position: relative;
- 
 }
 
 #canvas {
@@ -231,18 +800,25 @@ code {
 }
 
 #techIntro p {
-  font-family: Consolas,monaco,monospace;
-  font-weight: 700; 
+  font-family: Consolas, monaco, monospace;
+  font-weight: 700;
   font-size: .55rem;
   margin-bottom: 0 !important;
   -webkit-filter: drop-shadow(1px 0px 5px black);
-    -moz-filter: drop-shadow(1px 0px 5px black);
-    filter: drop-shadow(1px 0px 5px black);
+  -moz-filter: drop-shadow(1px 0px 5px black);
+  filter: drop-shadow(1px 0px 5px black);
+}
+
+#techBtn {
+  position: relative;
+  z-index: 5;
 }
 
 .varStyle {
-  color: #9cdcfe;;
+  color: #9cdcfe;
+  ;
 }
+
 
 .defineStyle {
   color: #569cd6;
@@ -263,6 +839,3 @@ code {
 .strStyle {
   color: #ce9178;
 }
-
-
-

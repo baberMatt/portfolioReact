@@ -41,17 +41,15 @@ function Contactsmobile() {
 
   return (
     <div className={`nav contactMeMobile ${contactsView} `}>
-      <div className="row d-flex  justify-content-center">
+      <div className="row m-0 p-0 d-flex  justify-content-center">
         <div className="col-lg-12 d-flex justify-content-center align-items-center " id="navStyleTop">
-
           <img className="pt-2" onClick={handleContactBtn} src="https://img.icons8.com/plasticine/50/000000/email-sign.png" />
         </div>
         <div className="col-lg-12 d-flex pt-3 px-5 justify-content-between" id="navStyleBottom">
 
           <div className="text-center contactDivMobile d-flex flex-column align-items-center">
-            <h6>Email Me</h6>
-            <p id="emailMobile" onClick={copyEmail} className="p-1 border border-dark rounded">mbaber114@gmail.com</p>
-            <p id="copiedMobile" className={"border border-dark rounded " + copiedView}>copied to clipboard!</p>
+            <img id="email" onClick={copyEmail}  src="https://img.icons8.com/color/48/000000/gmail--v1.png"/>
+            <p id="copiedMobile" className={"border px-2 border-dark rounded " + copiedView}>copied!</p>
           </div>
 
 

@@ -41,16 +41,16 @@
 }
 
 #email {
-    color: black;
+    /* color: black;
     font-size: .7rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: white;
+    background-color: white; */
 }
 
 #copied {
     width: 80%;
     color: black;
-    font-size: 14px;
+    font-size: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: white;
 }
