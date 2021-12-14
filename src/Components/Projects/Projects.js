@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Canvas from "../Canvas"
 import Streamline from "../../Assets/streamLine.png"
 import Botw from "../../Assets/baberOfTheWoods.png"
-import Loaded from "../../Assets/loaded.png"
+import GameBridge from "../../Assets/gameBrdige.png"
 import Turnup from "../../Assets/turnup.png"
 import Twochefs from "../../Assets/2chefs.png"
 import "./style.css";
@@ -14,11 +14,10 @@ function Projects(props) {
     const webIcon = <img src="https://img.icons8.com/carbon-copy/40/000000/domain.png"/>;
     const [showCanvas, setShowCanvas] = useState(false)
 
-    const loadedLink = "https://loadedtruckingapp.herokuapp.com/";
-    const loadedRepo = "https://github.com/baberMatt/loaded";
-    const streamLineLink = "https://babermatt.github.io/StreamerSearch/";
-    const streamLineRepo = "https://github.com/baberMatt/StreamerSearch";
-    const turnupLink = "https://turnuppopups.herokuapp.com/";
+    const loadedLink = "";
+    const loadedRepo = "";
+
+    const turnupLink = "";
     const turnupRepo = "https://github.com/baberMatt/Turnup";
     const botwLink = "https://babermatt.github.io/BaberOfTheWoods/";
     const botwRepo = "https://github.com/baberMatt/BaberOfTheWoods";
@@ -58,7 +57,7 @@ function Projects(props) {
                 <Col xs={12} lg={6}>
                     <Row>
                         <Col md={12} className={"d-flex colCustom " + (props.windowSize<1199 ? "justify-content-center" : "")}>
-                            <img className="img-fluid projImg projShadow" src={Turnup} />
+                            <img className="img-fluid projImg projShadow" style={{width: "350px", height: "250px"}} src={Turnup} />
                             <div className="projDescription projShadow text-right">
                                 <h3>Turnup</h3>
                                 <p>An platform for Pop Up events. Host and guests a like can browse events, flag attendance and even purchase offerings.</p>
@@ -66,10 +65,10 @@ function Projects(props) {
                             </div>
                         </Col>
                         <Col md={12} className={"d-flex colCustom1 " + (props.windowSize<1199 ? "justify-content-center" : "")}>
-                            <img className="img-fluid projImg projShadow" src={Loaded} />
+                            <img className="img-fluid projImg projShadow" style={{width: "350px", height: "250px"}} src={GameBridge} />
                             <div className="projDescription projShadow text-right">
-                                <h3 >Loaded</h3>
-                                <p>A logistics tracking app. Allows you to keep track of drivers and loads, data about them and their status.</p>
+                                <h3 >gameBrdige</h3>
+                                <p>A react, web3 and smart contract app that will interact with the Binance Smart Chain</p>
                                 <a href={loadedLink}><button className="btn btn-light px-2 py-0 mx-2"> {webIcon} </button></a> <a href={loadedRepo}><button className="btn btn-light p-2 mx-1">git {repoIcon}</button></a>
                             </div>
                            
