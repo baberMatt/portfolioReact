@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.5cddf249.chunk.css",
-    "main.js": "/static/js/main.f5a760dd.chunk.js",
-    "main.js.map": "/static/js/main.f5a760dd.chunk.js.map",
+    "main.js": "/static/js/main.d5381f92.chunk.js",
+    "main.js.map": "/static/js/main.d5381f92.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2fd7dc15.js",
     "runtime-main.js.map": "/static/js/runtime-main.2fd7dc15.js.map",
     "static/css/2.9901cfd6.chunk.css": "/static/css/2.9901cfd6.chunk.css",
@@ -14,18 +14,18 @@
     "static/js/2.932e60b6.chunk.js.LICENSE.txt": "/static/js/2.932e60b6.chunk.js.LICENSE.txt",
     "static/media/2chefs.14b0c7bc.png": "/static/media/2chefs.14b0c7bc.png",
     "static/media/baberOfTheWoods.5bb15e61.png": "/static/media/baberOfTheWoods.5bb15e61.png",
+    "static/media/gameBrdige.cd5b91ce.png": "/static/media/gameBrdige.cd5b91ce.png",
     "static/media/jumboLoopBG.5027152e.mp4": "/static/media/jumboLoopBG.5027152e.mp4",
-    "static/media/loaded.07655aaa.png": "/static/media/loaded.07655aaa.png",
     "static/media/mattBaberResume.8982da52.pdf": "/static/media/mattBaberResume.8982da52.pdf",
     "static/media/portrait.1278c573.png": "/static/media/portrait.1278c573.png",
     "static/media/streamLine.a39dcf1e.png": "/static/media/streamLine.a39dcf1e.png",
-    "static/media/turnup.1c8264f5.png": "/static/media/turnup.1c8264f5.png"
+    "static/media/turnup.e97f32c7.png": "/static/media/turnup.e97f32c7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2fd7dc15.js",
     "static/css/2.9901cfd6.chunk.css",
     "static/js/2.932e60b6.chunk.js",
     "static/css/main.5cddf249.chunk.css",
-    "static/js/main.f5a760dd.chunk.js"
+    "static/js/main.d5381f92.chunk.js"
   ]
 }
